@@ -118,7 +118,8 @@ a:visited {
  ********************************************************************/
 
 
- @media screen and (min-width: 500px) {
+ @media screen and (max-device-width: 500px) {
+ 	/*for mobile phones*/
  	header h1 {
  		font-size: 3em;
  	}
@@ -126,4 +127,17 @@ a:visited {
  		height: 20em;
  		padding: 1em;
  	}
+ 	#social-links li {
+ 		font-size: 2em;
+ 	}
  }
+@media screen and (max-width: 956px) {
+	/*for desktops*/
+	header h1 {
+		font-size: 3em;
+	}
+	header {
+		background-size: 100%;
+		padding: 2em;
+	}
+}
