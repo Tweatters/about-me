@@ -1,0 +1,129 @@
+/**
+ * Font Sizing Emmet 1rem = 10px
+ */
+html {font-size: 62.5%;} / sets global font size to 10px on desktop browsers /
+h1 {font-size:3.2rem}
+h2 {font-size:2.4rem}
+h3 {font-size:1.87167rem}
+h4 {font-size:1.6rem}
+h5 {font-size:1.32833rem}
+h6 {font-size:1.07167rem}
+input, select, th, td {font-size:1rem}
+
+/**
+ * Start of Custom Styles
+ */
+
+.centered {
+	text-align: center;
+}
+
+.center-boundwidth {
+	max-width: 45em;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 2em;
+}
+
+body {
+	background-color: #FFF6EA;
+	font-family: "volkorn", arial, serif;
+	font-size: 1.25em;
+}
+
+header {
+	background-image: url('http://i1196.photobucket.com/albums/aa412/twattz1/4ce687a1-840c-4366-beb7-b3314cb07f19_zpsg9gzfx2g.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top: solid 1em #C13C0B;
+	margin-bottom: 0.1em;
+	padding: 7.5em 0;
+	color: white;
+}
+
+.background-color {
+	margin-top: 5em;
+	padding: 4em 0;
+	background-color: #6D2D05;
+	color: white;
+}
+
+/***********************************************************************
+ ***************************** Top Section *****************************
+ ***********************************************************************/
+header h1 {
+	font-size: 4em;
+	letter-spacing: -.05em;
+	text-transform: uppercase;
+	margin-top: 3em;
+	margin-left: .3em;
+}
+header p {
+	font-size: 2.5em;
+	margin-left: 1em;
+	margin-top: -1em;
+}
+
+/*********************************************************************
+ *************************** Body Section ****************************
+ *********************************************************************/
+#questions > h1 {
+	font-size: 3em;
+}
+
+#questions > h2 {
+	color: #7A92EB;
+	font-size: 1.5em;
+}
+
+section > p > span {
+	font-weight: bold;
+}
+
+
+/*****************************************************************
+ *************** Footer Section **********************************
+ *****************************************************************/
+
+#social-links > li {
+	display: inline-block;
+}
+
+#social-links {
+	word-spacing: 2em;
+	margin-right: 2.5em;
+}
+
+
+/**************************************************************
+ ****************** Link Declarations *************************
+ **************************************************************/
+a {
+	color: #E87420;
+}
+a:hover {
+	text-decoration: none;
+	font-style: italic;
+}
+a:visited {
+	color: #D986E8;
+}
+::selection {
+	color: white;
+	background-color: blue;
+}
+
+/********************************************************************
+ *************************** Responsive Elements ********************
+ ********************************************************************/
+
+
+ @media screen and (min-width: 500px) {
+ 	header h1 {
+ 		font-size: 3em;
+ 	}
+ 	header {
+ 		height: 20em;
+ 		padding: 1em;
+ 	}
+ }
