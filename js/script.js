@@ -43,8 +43,4 @@ $('#cursor-hobbies, #cursor-job').click(function() {
   $('#music-answer').hide(1000);
 });
 
-$('body').click(function() {
-	$('#music-answer').hide(1000);
-});
-
 ;
