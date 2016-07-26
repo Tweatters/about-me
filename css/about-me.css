@@ -19,31 +19,32 @@ input, select, th, td {font-size:1rem}
 }
 
 .center-boundwidth {
-	max-width: 60em;
+	max-width: 80rem;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 2em;
+	margin-top: 3rem;
 }
 
 body {
 	background-color: #FFF6EA;
 	font-family: "volkorn", arial, serif;
-	font-size: 1.25em;
+	font-size: 1.25rem;
+	text-align: justify;
 }
 
 header {
 	background-image: url('http://i1196.photobucket.com/albums/aa412/twattz1/4ce687a1-840c-4366-beb7-b3314cb07f19_zpsg9gzfx2g.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	border-top: solid 1em #C13C0B;
-	margin-bottom: 0.1em;
-	padding: 7.5em 0;
+	border-top: solid 1rem #C13C0B;
+	margin-bottom: 0.1rem;
+	padding: 7.5rem 0;
 	color: white;
 }
 
 .background-color {
-	margin-top: 5em;
-	padding: 4em 0;
+	margin-top: 5rem;
+	padding: 4rem 0;
 	background-color: #6D2D05;
 	color: white;
 }
@@ -52,28 +53,28 @@ header {
  ***************************** Top Section *****************************
  ***********************************************************************/
 header h1 {
-	font-size: 4em;
-	letter-spacing: -.05em;
+	font-size: 5rem;
+	letter-spacing: -.15rem;
 	text-transform: uppercase;
-	margin-top: 3em;
-	margin-left: .3em;
+	margin-top: 15rem;
+	margin-left: 1rem;
 }
 header p {
-	font-size: 2.5em;
-	margin-left: 1em;
-	margin-top: -1em;
+	font-size: 4rem;
+	margin-left: 1rem;
+	margin-top: -3rem;
 }
 
 /*********************************************************************
  *************************** Body Section ****************************
  *********************************************************************/
 #questions > h1 {
-	font-size: 3em;
+	font-size: 4rem;
 }
 
 #questions > h2 {
 	color: #7A92EB;
-	font-size: 1.5em;
+	font-size: 2rem;
 }
 
 section > p > span {
@@ -93,8 +94,8 @@ section > p > span {
 }
 
 #social-links {
-	word-spacing: 2em;
-	margin-right: 2.5em;
+	word-spacing: 2rem;
+	margin-right: 3rem;
 }
 
 
@@ -124,23 +125,27 @@ a:visited {
  @media screen and (max-device-width: 500px) {
  	/*for mobile phones*/
  	header h1 {
- 		font-size: 3em;
+ 		font-size: 4rem;
  	}
  	header {
- 		height: 20em;
- 		padding: 1em;
+ 		background-size: 100%;
+ 		padding: 1rem;
  	}
  	#social-links li {
- 		font-size: 2em;
+ 		font-size: 3rem;
+ 	}
+ 	#introduction, #questions {
+ 		margin: 3rem;
  	}
  }
 @media screen and (max-width: 956px) {
 	/*for desktops*/
 	header h1 {
-		font-size: 3em;
+		font-size: 4rem;
+		margin-top: 10rem;
 	}
 	header {
 		background-size: 100%;
-		padding: 2em;
+		padding: 1rem;
 	}
 }

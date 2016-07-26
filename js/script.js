@@ -8,39 +8,34 @@ $(function() {
 
 });
 
-/***** show then hide hobbies*****/
+/************************************************
+    ******* Question section animations*******
+ ************************************************/
+
+$('#questions').mouseenter(function() {
+  $('#questions h2').css("font-size", "2.25rem");
+})
 
 $('#cursor-hobbies').click(function() {
-  $("#hobbies-answer").first().show("fast", function showNext() {
-    $(this).next("#hobbies-answer").show("fast", showNext);
-  });
-});
-  $("#cursor-job, #cursor-music").click(function() {
-  $("#hobbies-answer").hide(1000);
-});
-
-/***** Show then hide job ****/
+  $('p.active').hide(1000);
+  $('#hobbies-answer').show("slow");
+})
 
 $('#cursor-job').click(function() {
-  $('#job-answer').first().show("fast", function showNext() {
-    $(this).next('#job-answer').show("fast", showNext);
-  });
-});
-
-$('#cursor-music, #cursor-hobbies').click(function() {
-  $('#job-answer').hide(1000);
-});
-
-/******* Show then hide music ******/
+  $('p.active').hide(1000);
+  $('#job-answer').show("slow");
+})
 
 $('#cursor-music').click(function() {
-  $('#music-answer').first().show("fast", function showNext() {
-    $(this).next("#music-answer").show("fast", showNext);
-  });
+  $('p.active').hide(1000);
+  $('#music-answer').show("slow");
+})
+
+$('#questions').mouseleave(function() {
+  $('#questions h2').css("font-size", "2rem");
+  $('.active').hide(1000);
 });
 
-$('#cursor-hobbies, #cursor-job').click(function() {
-  $('#music-answer').hide(1000);
-});
+; //closes document ready function.
 
-;
+/*use a class called active, add it to the elements that need to be displayed. when clicked it moves to the section. read up on DRY dont repeat yourself. SRP single response principle*/
